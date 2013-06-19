@@ -1,0 +1,168 @@
+object Form6: TForm6
+  Left = 322
+  Top = 213
+  Width = 667
+  Height = 496
+  Caption = 'Form6'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 148
+    Top = 324
+    Width = 108
+    Height = 23
+    Caption = #1085#1072#1080#1084#1077#1085#1086#1074#1072#1085#1080#1077
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 16
+    Top = 344
+    Width = 97
+    Height = 38
+    Caption = #1055#1086#1080#1089#1082':'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Comic Sans MS'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 32
+    Top = 16
+    Width = 111
+    Height = 38
+    Caption = #1055#1091#1090#1077#1074#1082#1080
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+  end
+  object DBGrid1: TDBGrid
+    Left = 8
+    Top = 72
+    Width = 641
+    Height = 177
+    DataSource = DataModule3.DataSource2
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'MS Sans Serif'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = #1053#1072#1080#1084#1077#1085#1086#1074#1072#1085#1080#1077
+        Width = 83
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #1057#1090#1088#1072#1085#1072
+        Width = 46
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #1043#1086#1088#1086#1076
+        Width = 53
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #1062#1077#1085#1072
+        Width = 54
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #1058#1088#1072#1085#1089#1087#1086#1088#1090
+        Width = 67
+        Visible = True
+      end>
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 8
+    Top = 264
+    Width = 340
+    Height = 25
+    DataSource = DataModule3.DataSource2
+    TabOrder = 1
+  end
+  object Edit1: TEdit
+    Left = 144
+    Top = 352
+    Width = 121
+    Height = 21
+    TabOrder = 2
+  end
+  object Button1: TButton
+    Left = 168
+    Top = 384
+    Width = 75
+    Height = 25
+    Caption = #1055#1086#1080#1089#1082
+    TabOrder = 3
+    OnClick = Button1Click
+  end
+  object RadioGroup1: TRadioGroup
+    Left = 368
+    Top = 264
+    Width = 273
+    Height = 113
+    Caption = #1057#1086#1088#1090#1080#1088#1086#1074#1082#1072
+    Items.Strings = (
+      #1057#1090#1088#1072#1085#1072
+      #1043#1086#1088#1086#1076
+      #1058#1088#1072#1085#1089#1087#1086#1088#1090
+      #1062#1077#1085#1072)
+    TabOrder = 4
+    OnClick = RadioGroup1Click
+  end
+  object Button2: TButton
+    Left = 512
+    Top = 400
+    Width = 123
+    Height = 33
+    Caption = #1042#1099#1093#1086#1076
+    TabOrder = 5
+  end
+  object MainMenu1: TMainMenu
+    Left = 672
+    Top = 8
+    object N1: TMenuItem
+      Caption = #1092#1072#1081#1083
+      object N2: TMenuItem
+        Caption = #1044#1086#1073#1072#1074#1080#1090#1100' '#1079#1072#1087#1080#1089#1100
+      end
+      object N5: TMenuItem
+        Caption = '---------------------------'
+      end
+      object N6: TMenuItem
+        Caption = #1042#1099#1093#1086#1076
+      end
+    end
+    object N3: TMenuItem
+      Caption = #1055#1086#1084#1086#1097
+      object N4: TMenuItem
+        Caption = #1048#1085#1092#1086#1088#1084#1072#1094#1080#1103' '#1086' '#1086#1082#1085#1077' '#1088#1077#1075#1080#1089#1090#1088#1072#1094#1080#1103' '#1087#1091#1090#1077#1074#1086#1082
+      end
+    end
+  end
+end

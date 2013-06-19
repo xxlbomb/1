@@ -1,0 +1,303 @@
+object Form8: TForm8
+  Left = 255
+  Top = 119
+  BorderStyle = bsToolWindow
+  Caption = 'Form8'
+  ClientHeight = 678
+  ClientWidth = 713
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 8
+    Top = 32
+    Width = 390
+    Height = 38
+    Caption = #1047#1072#1088#1077#1075#1080#1089#1090#1088#1080#1088#1086#1074#1072#1085#1085#1099#1077' '#1082#1083#1080#1077#1085#1090#1099
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 20
+    Top = 372
+    Width = 102
+    Height = 23
+    Caption = #1055#1086' '#1092#1072#1084#1080#1083#1080#1080
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 172
+    Top = 370
+    Width = 108
+    Height = 23
+    Caption = #1055#1086' '#1090#1077#1083#1077#1092#1086#1085#1091' '
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 168
+    Top = 328
+    Width = 97
+    Height = 38
+    Caption = #1055#1086#1080#1089#1082':'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Comic Sans MS'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 308
+    Top = 370
+    Width = 138
+    Height = 23
+    Caption = #1055#1086' '#1088#1072#1073' '#1090#1077#1083#1077#1092#1086#1085#1091' '
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 8
+    Top = 544
+    Width = 325
+    Height = 23
+    Caption = #1047#1072#1088#1077#1075#1080#1089#1090#1088#1080#1088#1086#1074#1072#1085#1085#1099#1077' '#1087#1091#1090#1105#1074#1082#1080' '#1085#1072' '#1082#1083#1080#1077#1085#1090#1072': '
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 8
+    Top = 648
+    Width = 188
+    Height = 23
+    Caption = #1048#1085#1092#1086#1088#1084#1072#1094#1080#1103' '#1086' '#1087#1091#1090#1077#1074#1082#1077': '
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+  end
+  object DBGrid1: TDBGrid
+    Left = 8
+    Top = 80
+    Width = 697
+    Height = 201
+    DataSource = DataModule3.DataSource1
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'MS Sans Serif'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = #1050#1086#1076'_'#1082#1083#1080#1077#1085#1090#1072
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #1060#1072#1084#1080#1083#1080#1103
+        Width = 80
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #1048#1084#1103
+        Width = 80
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #1054#1090#1095#1077#1089#1090#1074#1086
+        Width = 80
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #1058#1077#1083#1077#1092#1086#1085
+        Width = 50
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #1040#1076#1088#1077#1089
+        Width = 80
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #1052#1077#1089#1090#1086'_'#1088#1072#1073#1086#1090#1099
+        Width = 80
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #1044#1086#1083#1078#1085#1086#1089#1090#1100
+        Width = 60
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #1056#1072#1073#1086#1095#1080#1081'_'#1090#1077#1083#1077#1092#1086#1085
+        Width = 60
+        Visible = True
+      end>
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 8
+    Top = 296
+    Width = 240
+    Height = 25
+    DataSource = DataModule3.DataSource1
+    TabOrder = 1
+  end
+  object Edit1: TEdit
+    Left = 8
+    Top = 400
+    Width = 121
+    Height = 21
+    TabOrder = 2
+  end
+  object Button1: TButton
+    Left = 32
+    Top = 426
+    Width = 75
+    Height = 25
+    Caption = #1055#1086#1080#1089#1082
+    TabOrder = 3
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 191
+    Top = 426
+    Width = 75
+    Height = 25
+    Caption = #1055#1086#1080#1089#1082
+    TabOrder = 4
+    OnClick = Button2Click
+  end
+  object Edit2: TEdit
+    Left = 159
+    Top = 400
+    Width = 121
+    Height = 21
+    TabOrder = 5
+  end
+  object RadioGroup1: TRadioGroup
+    Left = 521
+    Top = 322
+    Width = 128
+    Height = 105
+    Caption = #1060#1080#1083#1100#1090#1088
+    Items.Strings = (
+      #1060#1072#1084#1080#1083#1080#1080
+      #1040#1076#1088#1077#1089
+      #1052#1077#1089#1090#1086' '#1088#1072#1073#1086#1090#1099
+      #1044#1086#1083#1078#1085#1086#1089#1090#1100)
+    TabOrder = 6
+    OnClick = RadioGroup1Click
+  end
+  object Button3: TButton
+    Left = 343
+    Top = 426
+    Width = 75
+    Height = 25
+    Caption = #1055#1086#1080#1089#1082
+    TabOrder = 7
+    OnClick = Button3Click
+  end
+  object Edit3: TEdit
+    Left = 311
+    Top = 400
+    Width = 121
+    Height = 21
+    TabOrder = 8
+  end
+  object DBGrid2: TDBGrid
+    Left = 8
+    Top = 464
+    Width = 697
+    Height = 65
+    DataSource = DataModule3.DataSource6
+    TabOrder = 9
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'MS Sans Serif'
+    TitleFont.Style = []
+  end
+  object Edit4: TEdit
+    Left = 344
+    Top = 544
+    Width = 81
+    Height = 21
+    TabOrder = 10
+  end
+  object Button4: TButton
+    Left = 448
+    Top = 544
+    Width = 75
+    Height = 25
+    Caption = #1055#1088#1086#1089#1084#1086#1090#1088
+    TabOrder = 11
+    OnClick = Button4Click
+  end
+  object Button5: TButton
+    Left = 304
+    Top = 648
+    Width = 75
+    Height = 25
+    Caption = #1055#1088#1086#1089#1084#1086#1090#1088
+    TabOrder = 12
+    OnClick = Button5Click
+  end
+  object DBGrid3: TDBGrid
+    Left = 8
+    Top = 576
+    Width = 697
+    Height = 65
+    DataSource = DataModule3.DataSource7
+    TabOrder = 13
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'MS Sans Serif'
+    TitleFont.Style = []
+  end
+  object Edit5: TEdit
+    Left = 208
+    Top = 648
+    Width = 81
+    Height = 21
+    TabOrder = 14
+  end
+end

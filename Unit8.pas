@@ -1,0 +1,124 @@
+unit Unit8;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ExtCtrls, DBCtrls, Grids, DBGrids;
+
+type
+  TForm8 = class(TForm)
+    DBGrid1: TDBGrid;
+    DBNavigator1: TDBNavigator;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Edit1: TEdit;
+    Button1: TButton;
+    Button2: TButton;
+    Edit2: TEdit;
+    RadioGroup1: TRadioGroup;
+    Label5: TLabel;
+    Button3: TButton;
+    Edit3: TEdit;
+    DBGrid2: TDBGrid;
+    Label6: TLabel;
+    Edit4: TEdit;
+    Button4: TButton;
+    Label7: TLabel;
+    Button5: TButton;
+    DBGrid3: TDBGrid;
+    Edit5: TEdit;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+    procedure RadioGroup1Click(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
+    procedure Button5Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form8: TForm8;
+
+implementation
+
+uses Unit1, Unit2, Unit3, Unit4, Unit5, Unit6, Unit7;
+
+{$R *.dfm}
+
+procedure TForm8.Button1Click(Sender: TObject);
+begin
+if length(Edit1.Text)>0 then
+  begin
+    datamodule3.ADOTable1.filtered:=false;
+    datamodule3.ADOTable1.filter:='Фамилия='+''+Edit1.text;
+    datamodule3.ADOTable1.filtered:=true;
+  end;
+end;
+
+procedure TForm8.Button2Click(Sender: TObject);
+begin
+if length(Edit2.Text)>0 then
+  begin
+    datamodule3.ADOTable1.filtered:=false;
+    datamodule3.ADOTable1.filter:='Телефон='+''+Edit2.text;
+    datamodule3.ADOTable1.filtered:=true;
+  end;
+end;
+
+procedure TForm8.Button3Click(Sender: TObject);
+begin
+if length(Edit3.Text)>0 then
+  begin
+    datamodule3.ADOTable1.filtered:=false;
+    datamodule3.ADOTable1.filter:='Рабочий_телефон='+''+Edit3.text;
+    datamodule3.ADOTable1.filtered:=true;
+  end;
+end;
+
+procedure TForm8.RadioGroup1Click(Sender: TObject);
+begin
+if RadioGroup1.ItemIndex=0 then datamodule3.ADOTable1.IndexFieldNames:='Фамилия';
+if RadioGroup1.ItemIndex=1 then datamodule3.ADOTable1.IndexFieldNames:='Адрес';
+if RadioGroup1.ItemIndex=2 then datamodule3.ADOTable1.IndexFieldNames:='Место_работы';
+if RadioGroup1.ItemIndex=3 then datamodule3.ADOTable1.IndexFieldNames:='Должность';
+end;
+
+procedure TForm8.Button4Click(Sender: TObject);
+begin
+datamodule3.ADOQuery2.Close;
+datamodule3.ADOQuery2.SQL.Clear;
+datamodule3.ADOQuery2.SQL.Add('Select [Код путевки], Дата_регистрации, Транспорт, Стоимость, Код_сотрудника');
+datamodule3.ADOQuery2.SQL.Add('From регистрация');
+datamodule3.ADOQuery2.SQL.Add('Where Код_клиента=:param2');
+datamodule3.ADOQuery2.Parameters[0].Value:=StrToInt(Edit4.Text);
+datamodule3.ADOQuery2.Open;
+DBGrid2.Columns[0].Width:=100;
+DBGrid2.Columns[1].Width:=100;
+DBGrid2.Columns[2].Width:=100;
+DBGrid2.Columns[3].Width:=100;
+DBGrid2.Columns[4].Width:=100;
+end;
+
+procedure TForm8.Button5Click(Sender: TObject);
+begin
+datamodule3.ADOQuery3.Close;
+datamodule3.ADOQuery3.SQL.Clear;
+datamodule3.ADOQuery3.SQL.Add('Select [Код путевки], Наименование, Страна, Город, Транспорт');
+datamodule3.ADOQuery3.SQL.Add('From Путевка');
+datamodule3.ADOQuery3.SQL.Add('Where [Код путевки]=:param2');
+datamodule3.ADOQuery3.Parameters[0].Value:=StrToInt(Edit5.Text);
+datamodule3.ADOQuery3.Open;
+DBGrid3.Columns[0].Width:=100;
+DBGrid3.Columns[1].Width:=100;
+DBGrid3.Columns[2].Width:=100;
+DBGrid3.Columns[3].Width:=100;
+DBGrid3.Columns[4].Width:=100;
+end;
+
+end.
